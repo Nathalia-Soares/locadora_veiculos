@@ -1,0 +1,31 @@
+/* Estilos comuns */
+.filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+.filters button {
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Variante A: Manter o estilo original dos botões */
+.filters.variant-A button:active {
+  background-color: white;
+  color: #EA1D2C;
+  border: none;
+}
+
+/* Variante B: Estilo alterado para #ff5722 nos botões ativos */
+.filters.variant-B button:active {
+  background-color: white;
+  color: #EA1D2C;
+  border: #EA1D2C;
+}

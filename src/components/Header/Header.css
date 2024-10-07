@@ -1,0 +1,93 @@
+/* Estilo comum do cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Variante A: Fundo branco e fonte vermelha */
+.header.variant-A {
+  background-color: white;
+  color: #EA1D2C;
+}
+
+.header.variant-A nav ul li {
+  color: #EA1D2C;
+}
+
+.header.variant-A nav ul li:hover {
+  color: #EA1D2C;
+}
+
+/* Variante B: Fundo vermelho e fonte branca */
+.header.variant-B {
+  background-color: #EA1D2C;
+  color: white;
+}
+
+.header.variant-B nav ul li {
+  color: white;
+}
+
+.header.variant-B nav ul li:hover {
+  color: #e0e0e0;
+}
+
+/* Estilo comum para os itens do menu */
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+/* Estilo da barra de busca */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  padding: 5px 10px;
+  outline: none;
+  width: 300px;
+  font-size: 16px;
+}
+
+.search-bar input::placeholder {
+  color: #999;
+}
+
+.search-bar button {
+  background-color: #EA1D2C;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #EA1D2C;
+  color: white;
+}
+
+/* Estilo da área de informações do usuário */
+.user-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+}
