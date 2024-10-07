@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { mouseflow } from 'react-mouseflow';
 import './Header.css';
 
 const Header = () => {
@@ -7,8 +8,9 @@ const Header = () => {
   useEffect(() => {
     // Carregar Mouseflow
     const mouseflowScript = document.createElement('script');
-    mouseflowScript.src = 'https://cdn.mouseflow.com/projects/YOUR_PROJECT_ID.js'; // Substitua pelo seu ID do projeto Mouseflow
-    mouseflowScript.async = true;
+    mouseflow.initialize(process.env.MOUSEFLOW_ID); // Substitua pelo seu ID do projeto Mouseflow
+    mouseflow.src = `https://cdn.mouseflow.com/projects/${process.env.MOUSEFLOW_ID}.js`; // Substitua pelo seu ID do projeto Mouseflow
+    mouseflow.async = true;
     document.head.appendChild(mouseflowScript);
 
     // Definir variante A ou B (de forma aleatória)

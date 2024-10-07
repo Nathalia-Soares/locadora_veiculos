@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { mouseflow } from 'react-mouseflow';
 import './Filters.css';
 
 const Filters = () => {
@@ -7,7 +8,8 @@ const Filters = () => {
   useEffect(() => {
     // Carregar Mouseflow
     const mouseflowScript = document.createElement('script');
-    mouseflowScript.src = 'https://cdn.mouseflow.com/projects/YOUR_PROJECT_ID.js'; // Substitua pelo seu ID do projeto Mouseflow
+    mouseflow.initialize(process.env.MOUSEFLOW_ID); // Substitua pelo seu ID do projeto Mouseflow
+    mouseflow.src = `https://cdn.mouseflow.com/projects/${process.env.MOUSEFLOW_ID}.js`; // Substitua pelo seu ID do projeto Mouseflow
     mouseflowScript.async = true;
     document.head.appendChild(mouseflowScript);
 
