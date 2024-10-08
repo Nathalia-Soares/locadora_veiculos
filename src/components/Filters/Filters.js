@@ -21,14 +21,14 @@ const Filters = () => {
     }
 
     return () => {
-      document.head.removeChild(mouseflowScript);
+      document.head.removeChild(mouseflow);
     };
   }, []);
 
   const handleButtonClick = (button) => {
     // Rastreia o clique nos botões usando o Mouseflow
-    if (window.mouseflow) {
-      window.mouseflow('track', 'Filters Button Click', { button });
+    if (mouseflow) {
+      mouseflow('track', 'Filters Button Click', { button });
     }
   };
 
