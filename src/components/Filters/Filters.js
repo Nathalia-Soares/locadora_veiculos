@@ -7,7 +7,7 @@ const Filters = () => {
 
   useEffect(() => {
     // Carregar Mouseflow
-    mouseflow.initialize(process.env.MOUSEFLOW_ID); // Substitua pelo seu ID do projeto Mouseflow
+    mouseflow.initialize('f69f3fb0-f0bd-4160-b813-e6410a4b054f'); // Substitua pelo seu ID do projeto Mouseflow
     document.head.appendChild(mouseflow);
 
     // Definir variante A ou B (de forma aleatória)
