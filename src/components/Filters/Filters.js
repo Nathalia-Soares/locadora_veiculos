@@ -6,23 +6,7 @@ const Filters = () => {
   const [variant, setVariant] = useState('A');
 
   useEffect(() => {
-    // Carregar Mouseflow
-    mouseflow.initialize(process.env.MOUSEFLOW_ID); // Substitua pelo seu ID do projeto Mouseflow
-    document.head.appendChild(mouseflow);
-
-    // Definir variante A ou B (de forma aleatória)
-    const selectedVariant = Math.random() < 0.5 ? 'A' : 'B';
-    setVariant(selectedVariant);
-
-    mouseflow.newPageView('/');
-    // Adicionar tag do Mouseflow para rastrear a variante
-    if (mouseflow.initialized()) {
-      mouseflow.tag('tag', `FiltersVariant${selectedVariant}`);
-    }
-
-    return () => {
-      document.head.removeChild(mouseflow);
-    };
+    mouseflow.initialize(process.env.MOUSEFLOW_ID);
   }, []);
 
   const handleButtonClick = (button) => {
@@ -31,6 +15,8 @@ const Filters = () => {
       mouseflow('track', 'Filters Button Click', { button });
     }
   };
+
+  mouseflow('tag', `FiltersVariant${variant}`);
 
   return (
     <div className={`filters variant-${variant}`}>
