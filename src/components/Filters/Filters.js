@@ -7,19 +7,17 @@ const Filters = () => {
 
   useEffect(() => {
     // Carregar Mouseflow
-    const mouseflowScript = document.createElement('script');
     mouseflow.initialize(process.env.MOUSEFLOW_ID); // Substitua pelo seu ID do projeto Mouseflow
-    mouseflow.src = `https://cdn.mouseflow.com/projects/${process.env.MOUSEFLOW_ID}.js`; // Substitua pelo seu ID do projeto Mouseflow
-    mouseflowScript.async = true;
-    document.head.appendChild(mouseflowScript);
+    document.head.appendChild(mouseflow);
 
     // Definir variante A ou B (de forma aleatória)
     const selectedVariant = Math.random() < 0.5 ? 'A' : 'B';
     setVariant(selectedVariant);
 
+    mouseflow.newPageView('/');
     // Adicionar tag do Mouseflow para rastrear a variante
-    if (window.mouseflow) {
-      window.mouseflow('tag', `FiltersVariant${selectedVariant}`);
+    if (mouseflow.initialized()) {
+      mouseflow.tag('tag', `FiltersVariant${selectedVariant}`);
     }
 
     return () => {
