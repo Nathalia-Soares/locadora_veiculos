@@ -8,13 +8,22 @@ const Filters = () => {
   useEffect(() => {
     // Carregar Mouseflow
     mouseflow.initialize('f69f3fb0-f0bd-4160-b813-e6410a4b054f'); // Substitua pelo seu ID do projeto Mouseflow
-  }, []);
+    document.head.appendChild(mouseflow);
 
-  mouseflow.newPageView('/');
-  // Adicionar tag do Mouseflow para rastrear a variante
-  if (mouseflow.initialized()) {
-    mouseflow.tag('tag', `FiltersVariant${selectedVariant}`);
-  }
+    // Definir variante A ou B (de forma aleatória)
+    const selectedVariant = Math.random() < 0.5 ? 'A' : 'B';
+    setVariant(selectedVariant);
+
+    mouseflow.newPageView('/');
+    // Adicionar tag do Mouseflow para rastrear a variante
+    if (mouseflow.initialized()) {
+      mouseflow.tag('tag', `FiltersVariant${selectedVariant}`);
+    }
+
+    return () => {
+      document.head.removeChild(mouseflow);
+    };
+  }, []);
 
   const handleButtonClick = (button) => {
     // Rastreia o clique nos botões usando o Mouseflow
