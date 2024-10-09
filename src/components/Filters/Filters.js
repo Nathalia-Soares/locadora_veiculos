@@ -5,7 +5,7 @@ const Filters = () => {
   useEffect(() => {
     // Carregar Mouseflow
     const mouseflowScript = document.createElement('script');
-    mouseflowScript.src = `https://cdn.mouseflow.com/projects/${process.env.MOUSEFLOW_ID}.js`; // Substitua pelo seu ID do projeto Mouseflow
+    mouseflowScript.src = 'https://cdn.mouseflow.com/projects/YOUR_PROJECT_ID.js'; // Substitua pelo seu ID do projeto Mouseflow
     mouseflowScript.async = true;
     document.head.appendChild(mouseflowScript);
     // Definir variante A ou B (de forma aleatória)
