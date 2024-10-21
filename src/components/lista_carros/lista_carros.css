@@ -1,3 +1,7 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .car-list-container {
   background-color: #57778D;
   padding: 20px;
@@ -31,16 +35,6 @@
   flex: 8;
 }
 
-.filter-button {
-  height: 100%;
-  flex: .5;
-}
-
-.search-button {
-  height: 100%;
-  flex: .5;
-}
-
 .car-list {
   display: flex;
   flex-direction: column;
@@ -66,9 +60,10 @@
 }
 
 .car-image {
-  width: 90px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 15px;
+  object-fit: cover;
 }
 
 .car-info {
@@ -76,15 +71,15 @@
   flex-direction: column;
 }
 
-.car-info h3 {
+.car-info h2 {
   margin: 0;
-  font-size: 16px;
-  color: #333;
+  text-align: left;
+  color: #000000;
 }
 
 .car-info p {
   margin: 5px 0;
-  color: #555;
+  color: #000000;
 }
 
 .status {

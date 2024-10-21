@@ -1,3 +1,7 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .car-detail-container {
   background-color: #57778D;
   padding: 20px;
@@ -32,10 +36,15 @@ h2 {
   color: #333;
 }
 
-.car-header p{
+.car-header p {
   text-align: center;
   color: #333;
   margin-top: 10px;
+}
+
+.car-header h3 {
+  text-align: center;
+  color: #333;
 }
 
 .status p{
@@ -76,17 +85,18 @@ h2 {
   margin-top: 10px;
 }
 
-.colors label {
+.color-item {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  color: #333
+  gap: 5px;
 }
 
-.colors input {
-  margin-right: 5px;
+.color-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
 }
-
 .footer-buttons {
   display: flex;
   justify-content: space-around;
