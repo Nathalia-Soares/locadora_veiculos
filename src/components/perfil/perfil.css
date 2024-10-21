@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #57778D;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #57778D;
+}
+
+.perfil-container {
+  width: 100%; 
+  max-width: 700px;
+  min-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.perfil-header {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil-avatar {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.perfil-imagem {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block; 
+  margin: 0 auto; 
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.perfil-detalhes {
+  max-width: 700px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.campo p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.perfil-acoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.50);
+}
+
+.voltar {
+  background-color: #FFFFFF;
+}
+
+.alterar {
+  background-color: #FFFFFF;
+}
+
+.excluir {
+  background-color: red;
+  color: #fff;
+}

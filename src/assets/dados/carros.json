@@ -1,0 +1,219 @@
+[
+    {
+        "id": 1,
+        "name": "Toyota Corolla 2023",
+        "type": "Sedan",
+        "available": true,
+        "location": "São Paulo",
+        "price": 135,
+        "image": "/assets/Toyota Corolla 2022.jpg",
+        "brand": "Toyota",
+        "model": "Corolla",
+        "year": "2023/2023",
+        "category": "Sedan",
+        "fuel": "Flex (Etanol e Gasolina)",
+        "transmission": "Automático",
+        "doors": 4,
+        "colors": [
+            "Branco",
+            "Prata",
+            "Preto"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Fiat Argo 2023",
+        "type": "Hatch",
+        "available": true,
+        "location": "Cotia",
+        "price": 95,
+        "image": "/assets/Fiat Argo 2023.jpg",
+        "brand": "Fiat",
+        "model": "Argo",
+        "year": "2023/2023",
+        "category": "Hatch",
+        "fuel": "Flex (Etanol e Gasolina)",
+        "transmission": "Manual",
+        "doors": 5,
+        "colors": [
+            "Branco",
+            "Prata",
+            "Preto"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Jeep Renegade 2022",
+        "type": "Utilitário Esportivo",
+        "available": false,
+        "location": "Cotia",
+        "price": 125,
+        "image": "/assets/Jeep Renegade 2022.jpg",
+        "id": 3,
+        "name": "Jeep Renegade 2022",
+        "type": "Utilitário Esportivo",
+        "available": false,
+        "location": "Cotia",
+        "price": 125,
+        "image": "/assets/Jeep Renegade 2022.jpg",
+        "brand": "Jeep",
+        "model": "Renegade",
+        "year": "2022/2022",
+        "category": "SUV",
+        "fuel": "Flex (Etanol e Gasolina)",
+        "transmission": "Automático",
+        "doors": 4,
+        "colors": [
+            "Branco",
+            "Prata",
+            "Preto"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Hyundai HB20 2024",
+        "type": "Hatch",
+        "available": true,
+        "location": "Cotia",
+        "price": 95,
+        "image": "/assets/Hyundai HB20 2024.jpg",
+        "brand": "Hyundai",
+        "model": "HB20",
+        "year": "2024/2024",
+        "category": "Hatch",
+        "fuel": "Flex (Etanol e Gasolina)",
+        "transmission": "Manual",
+        "doors": 5,
+        "colors": [
+            "Branco",
+            "Prata",
+            "Preto"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Renault Kwid 2023",
+        "type": "Hatch",
+        "available": true,
+        "location": "Cotia",
+        "price": 95,
+        "image": "/assets/Renault Kwid 2023.jpg",
+        "brand": "Renault",
+        "model": "Kwid",
+        "year": "2023/2023",
+        "category": "Hatch",
+        "fuel": "Flex (Etanol e Gasolina)",
+        "transmission": "Manual",
+        "doors": 5,
+        "colors": [
+            "Branco",
+            "Prata",
+            "Preto"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Fiat Mobi 2023",
+        "type": "Hatch",
+        "available": true,
+        "location": "Cotia",
+        "price": 95,
+        "image": "/assets/Fiat Mobi 2023.jpg",
+        "brand": "Fiat",
+        "model": "Mobi",
+        "year": "2023/2023",
+        "category": "Hatch",
+        "fuel": "Flex (Etanol e Gasolina)",
+        "transmission": "Manual",
+        "doors": 5,
+        "colors": [
+            "Branco",
+            "Prata",
+            "Preto"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Honda City 2022",
+        "type": "Hatch",
+        "available": true,
+        "location": "Cotia",
+        "price": 95,
+        "image": "/assets/Honda City 2022.jpg",
+        "brand": "Honda",
+        "model": "City",
+        "year": "2022/2022",
+        "category": "Hatch",
+        "fuel": "Flex (Etanol e Gasolina)",
+        "transmission": "Automático",
+        "doors": 4,
+        "colors": [
+            "Branco",
+            "Prata",
+            "Preto"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Volkswagen Jetta 2023",
+        "type": "Hatch",
+        "available": true,
+        "location": "Cotia",
+        "price": 95,
+        "image": "/assets/Volkswagen Jetta 2023.jpg",
+        "brand": "Volkswagen",
+        "model": "Jetta",
+        "year": "2023/2023",
+        "category": "Hatch",
+        "fuel": "Flex (Etanol e Gasolina)",
+        "transmission": "Automático",
+        "doors": 4,
+        "colors": [
+            "Branco",
+            "Prata",
+            "Preto"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Toyota Yaris 2024",
+        "type": "Hatch",
+        "available": true,
+        "location": "Cotia",
+        "price": 95,
+        "image": "/assets/Toyota Yaris 2024.jpg",
+        "brand": "Toyota",
+        "model": "Yaris",
+        "year": "2024/2024",
+        "category": "Hatch",
+        "fuel": "Flex (Etanol e Gasolina)",
+        "transmission": "Automático",
+        "doors": 4,
+        "colors": [
+            "Branco",
+            "Prata",
+            "Preto"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Honda Fit 2022",
+        "type": "Hatch",
+        "available": true,
+        "location": "Cotia",
+        "price": 95,
+        "image": "/assets/Honda Fit 2022.jpg",
+        "brand": "Honda",
+        "model": "Fit",
+        "year": "2022/2022",
+        "category": "Hatch",
+        "fuel": "Flex (Etanol e Gasolina)",
+        "transmission": "Automático",
+        "doors": 4,
+        "colors": [
+            "Branco",
+            "Prata",
+            "Preto"
+        ]
+    }
+]
