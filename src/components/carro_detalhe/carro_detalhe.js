@@ -30,23 +30,31 @@ function CarroDetalhesComponent() {
                         <br />
                         Unidade {carroDetalhe.location}
                     </p>
-                    <p>Diárias à partir de R${carroDetalhe.price}</p>
+                    <h3>Diárias à partir de R${carroDetalhe.price}</h3>
                 </div>
 
                 <div className="car-specs">
-                    <p><strong>Marca:</strong> {carroDetalhe.brand}</p>
-                    <p><strong>Nome do Veículo:</strong> {carroDetalhe.model}</p>
-                    <p><strong>Ano/Modelo:</strong> {carroDetalhe.year}</p>
-                    <p><strong>Categoria:</strong> {carroDetalhe.category}</p>
-                    <p><strong>Combustível:</strong> {carroDetalhe.fuel}</p>
-                    <p><strong>Câmbio:</strong> {carroDetalhe.transmission}</p>
-                    <p><strong>Número de Portas:</strong> {carroDetalhe.doors}</p>
-                    <p><strong>Cores:</strong></p>
+                    <p>Marca:</p>
+                    <h3>{carroDetalhe.brand}</h3>
+                    <p>Nome do Veículo:</p>
+                    <h3>{carroDetalhe.model}</h3>
+                    <p>Ano/Modelo:</p>
+                    <h3>{carroDetalhe.year}</h3>
+                    <p>Categoria:</p>
+                    <h3>{carroDetalhe.category}</h3>
+                    <p>Combustível:</p>
+                    <h3>{carroDetalhe.fuel}</h3>
+                    <p>Câmbio:</p>
+                    <h3>{carroDetalhe.transmission}</h3>
+                    <p>Número de Portas:</p>
+                    <h3>{carroDetalhe.doors}</h3>
+                    <p>Cores:</p>
                     <div className="colors">
                         {carroDetalhe.colors.map((color, index) => (
-                            <label key={index}>
-                                <input type="radio" name="color" value={color} /> {color}
-                            </label>
+                            <div key={index} className="color-item">
+                                <div className="color-indicator" style={{ backgroundColor: color }} title={color}></div>
+                                <span className="color-name">{color}</span>
+                            </div>
                         ))}
                     </div>
                 </div>

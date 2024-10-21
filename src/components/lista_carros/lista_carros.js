@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ListaCarrosDados from './../../assets/dados/carros.json';
-import filterIcon from './../../assets/Filter Search.png';
-import searchIcon from './../../assets/Search Button.png';
+import filterIcon from './../../assets/Filter Search.svg';
+import searchIcon from './../../assets/Search Button.svg';
 import './lista_carros.css';
 
 const ListaCarrosComponent = () => {
@@ -30,10 +30,10 @@ const ListaCarrosComponent = () => {
         <div className="search-bar">
           <input type="text" placeholder="Insira um veículo:" />
           <button className="filter-button">
-            <img src={filterIcon} alt="Filter" />
+            <img src={filterIcon} width="35px" alt="Filter" />
           </button>
           <button className="search-button">
-            <img src={searchIcon} alt="Search" />
+            <img src={searchIcon} width="40px" alt="Search" />
           </button>
         </div>
       </header>
@@ -47,7 +47,7 @@ const ListaCarrosComponent = () => {
           >
             <img src={carro.image} alt={carro.name} className="car-image" />
             <div className="car-info">
-              <h3>{carro.name}</h3>
+              <h2>{carro.name}</h2>
               <p>{carro.type}</p>
               <p>
                 <span className={`status-dot ${carro.available ? 'available-dot' : 'unavailable-dot'}`}>
