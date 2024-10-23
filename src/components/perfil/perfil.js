@@ -1,9 +1,11 @@
 // src/Perfil.js
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import perfil from "./../../assets/perfil.png";
 import "./perfil.css";
 
 function PerfilComponent() {
+    const navigate = useNavigate();
     return (
         <div className="perfil">
             <div className="perfil-container">
@@ -61,7 +63,7 @@ function PerfilComponent() {
                 </div>
 
                 <div className="perfil-acoes">
-                    <button className="voltar">Voltar</button>
+                    <button className="voltar" onClick={() => navigate(-1)}>Voltar</button>
                     <button className="alterar">Alterar Perfil</button>
                     <button className="excluir">Excluir Perfil</button>
                 </div>
