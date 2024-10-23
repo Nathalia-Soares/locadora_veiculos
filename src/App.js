@@ -8,6 +8,8 @@ import Perfil from './pages/perfil';
 import ListaCarros from './pages/lista_carros';
 import './App.css';
 import CarroDetalhes from './pages/carro_detalhe';
+import OpcaoLocacao from './pages/opcoes_locacao';
+import Pagamento from './pages/pagamento';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/perfil" element={<Perfil />} />
           <Route path="/lista_carros" element={<ListaCarros />} />
           <Route path="/carro_id/:id" element={<CarroDetalhes />} />
+          <Route path="/carro_id/locacao/:id" element={<OpcaoLocacao />} />
+          <Route path="/carro_id/pagamento/:id" element={<Pagamento />} />
         </Routes>
       </Router>
     </div>

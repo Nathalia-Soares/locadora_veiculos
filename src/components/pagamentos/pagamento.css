@@ -1,0 +1,142 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.payment-container {
+  padding: 20px;
+  min-width: 400px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #000000; /* Define a cor das fontes para #000000 */
+}
+
+h2 {
+  text-align: center;
+  color: #FFFFFF; /* Define a cor das fontes para #000000 */
+}
+
+.car-info {
+  background-color: #FFFFFF;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.car-details {
+  color: #000000; /* Define a cor das fontes para #000000 */
+  text-align: center;
+  margin-top: 10px;
+}
+
+.car-details h3 {
+  margin: 0;
+  color: #000000; /* Define a cor das fontes para #000000 */
+}
+
+.car-details p {
+  margin: 5px 0;
+  color: #000000; /* Define a cor das fontes para #000000 */
+}
+
+.payment-options {
+  background-color: #FFFFFF;
+  padding: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: #000000; /* Define a cor das fontes para #000000 */
+}
+
+.payment-options label {
+  display: block;
+  margin-bottom: 10px;
+  color: #000000; /* Define a cor das fontes para #000000 */
+}
+
+.installments {
+  padding: 5px;
+  margin-bottom: 20px;
+  color: #FFFFFF; /* Define a cor das fontes para #000000 */
+}
+
+.installments H2 {
+  color: #FFFFFF; /* Define a cor das fontes para #000000 */
+}
+
+.installments input {
+  margin-right: 5px;
+  color: #000000; /* Define a cor das fontes para #000000 */
+}
+
+.installments label {
+  display: block;
+  margin-bottom: 10px;
+  color: #000000; /* Define a cor das fontes para #000000 */
+}
+
+.total-price p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000; /* Define a cor das fontes para #000000 */
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-button:active {
+  background-color: #FFFFFF;
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.small-input {
+  width: 80px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #FFFFFF; /* Define a cor das fontes para #000000 */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #FFFFFF; /* Define a cor das fontes para #000000 */
+}
+
+input[type="checkbox"] {
+  width: 2%;
+  border: 5px;
+  margin: 25px;
+  background-color: #FFFFFF;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2); 
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="file"] {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #FFFFFF;
+}

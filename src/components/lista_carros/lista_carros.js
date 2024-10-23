@@ -24,6 +24,12 @@ const ListaCarrosComponent = () => {
     }
   };
 
+  const handleLocacaoClick = () => {
+    if (selectedCarId !== null) {
+      navigate(`/carro_id/locacao/${selectedCarId}`);
+    }
+  };
+
   return (
     <div className="car-list-container">
       <header className="header">
@@ -65,7 +71,7 @@ const ListaCarrosComponent = () => {
 
       <div className="footer-buttons">
         <button className="footer-button" onClick={handleDadosClick}>Dados do veículo</button>
-        <button className="footer-button">Alugar veículo</button>
+        <button className="footer-button" onClick={handleLocacaoClick}>Alugar veículo</button>
       </div>
     </div>
   );
