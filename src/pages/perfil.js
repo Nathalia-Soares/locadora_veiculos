@@ -1,11 +1,11 @@
 import React from 'react';
-import { Analytics } from "@vercel/analytics/react"
 import PerfilComponent from '../components/perfil/perfil';
+import NavComponent from '../components/nav/nav';
 
 function Perfil() {
   return (
     <div className="Index">
-      <Analytics />
+      <NavComponent />
       <PerfilComponent />
     </div>
   );

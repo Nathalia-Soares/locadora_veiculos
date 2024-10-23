@@ -1,17 +1,17 @@
 import React from 'react';
-import CarroDetalhesComponent from '../components/carro_detalhe/carro_detalhe';
+import PagamentoComponent from '../components/pagamentos/pagamento';
 import NavComponent from '../components/nav/nav';
 
 
-function CarroDetalhes() {
+function Pagamento() {
     const selectedCarId = 1;
 
     return (
         <div className="Index">
             <NavComponent />
-            <CarroDetalhesComponent carId={selectedCarId} />
+            <PagamentoComponent carId={selectedCarId} />
         </div>
     );
 }
 
-export default CarroDetalhes;
+export default Pagamento;
