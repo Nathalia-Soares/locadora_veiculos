@@ -10,6 +10,11 @@ body {
   color: #000000; /* Define a cor das fontes para #000000 */
 }
 
+.payment-container h2 {
+  text-align: center;
+  color: #FFFFFF; /* Define a cor das fontes para #000000 */
+}
+
 h2 {
   text-align: center;
   color: #FFFFFF; /* Define a cor das fontes para #000000 */
