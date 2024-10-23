@@ -61,7 +61,7 @@ function PerfilComponent() {
                 </div>
 
                 <div className="perfil-acoes">
-                    <button className="voltar">Voltar</button>
+                    <button className="voltar" onClick={() => navigate(-1)}>Voltar</button>
                     <button className="alterar">Alterar Perfil</button>
                     <button className="excluir">Excluir Perfil</button>
                 </div>
